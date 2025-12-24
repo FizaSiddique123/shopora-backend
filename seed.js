@@ -7,7 +7,7 @@ dotenv.config();
 
 const seedProducts = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI);
+    await mongoose.connect("mongodb+srv://fizasiddique507_db_user:styIlz0pOp7moGhc@shopora-cluster.unib0xo.mongodb.net/?appName=shopora-cluster");
 
     await Product.deleteMany();
     await Product.insertMany(products);
